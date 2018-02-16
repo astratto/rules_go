@@ -116,12 +116,7 @@ def go_rules_dependencies():
       commit = "ab5ac5f9a8deb4855a60fab02bc61a4ec770bd49",  # v0.1.0, latest as of 2017-10-10
       overlay = manifest["org_golang_x_text"],
   )
-  _maybe(git_repository,
-      name = "org_golang_google_grpc",
-      remote = "https://github.com/grpc/grpc-go",
-      commit = "6b51017f791ae1cfbec89c52efdf444b13b550ef",  # master, latest as of 2018-02-16
-      overlay = manifest["org_golang_google_grpc"],
-  )
+
   _maybe(git_repository,
       name = "org_golang_google_genproto",
       remote = "https://github.com/google/go-genproto",
